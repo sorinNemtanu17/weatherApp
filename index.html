@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles/main.css" />
+    <script src="scripts/main.js" defer></script>
+    <title>Weather App</title>
+  </head>
+  <body>
+    <div><a href="#weather">Find weather at your location</a></div>
+    <section id='weather' class='weather'>
+      <p data-unit-toggle>
+        <label>
+          &#8451;
+          <input type="radio" name="units" value="units=metric"></input>
+        </label>
+        <label>
+          &#8457;
+          <input type="radio" name="units" value="units=imperial"></input>
+        </label>
+      </p>
+      <article class="weather-container">
+        <p class='city'></p>
+        <p class='current-temp'></p>
+        <div class='icon-container'>
+          <img src="" alt="">
+        </div>
+        <p class="description"></p>
+        <p class="max-temp"></p>
+        <p class='min-temp'></p>
+      </article>
+   </section>
+  
+
+  </body>
+</html>
