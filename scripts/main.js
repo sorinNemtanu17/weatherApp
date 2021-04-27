@@ -33,6 +33,7 @@ function getWeather() {
       fetch(`${weatherApiUrl}&${getValue}`)
         .then(handleResponse)
         .then((data) => {
+          console.log(data);
           city.textContent = data.name;
           iconLink.src = `http://openweathermap.org/img/wn/${data.weather[0].icon}@2x.png`;
           description.textContent = data.weather[0].description;
